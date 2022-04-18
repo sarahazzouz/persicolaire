@@ -1,53 +1,19 @@
-
-import java.util.*;
-
-/**
- * 
- */
 public class Compte {
-
-    /**
-     * Default constructor
-     */
-    public Compte() {
+    private String num;
+    private String login;
+    private String mdp ; 
+    public Compte(String mun , String login ,String mdp ){
+        this.num = num;
+        this.login = login;
+        this.mdp = mdp ; 
     }
-
-    /**
-     * 
-     */
-    public void String num;
-
-    /**
-     * 
-     */
-    public void String login;
-
-    /**
-     * 
-     */
-    public void String Mdp;
-
-
-
-    /**
-     * 
-     */
-    public void se connecter() {
-        // TODO implement here
+    public void setNum(String num) {
+        this.num = num;
     }
-
-    /**
-     * 
-     */
-    public void ajoutEnfant() {
-        // TODO implement here
+    public void setMdp(String mdp) {
+        this.mdp = mdp;
     }
-
-    /**
-     * 
-     */
-    public void ajoutConjoint() {
-        // TODO implement here
+    public void setLogin(String login) {
+        this.login = login;
     }
-
 }
