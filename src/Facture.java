@@ -1,34 +1,20 @@
-
-import java.util.*;
-
-/**
- * 
- */
 public class Facture {
-
-    /**
-     * Default constructor
-     */
-    public Facture() {
+    private String num ; 
+    private String montant ; 
+    public Facture(String montant , String num){
+        this.montant = montant ;  
+        this.num = num ; 
     }
-
-    /**
-     * 
-     */
-    public void String num;
-
-    /**
-     * 
-     */
-    public void String montant;
-
-
-
-    /**
-     * 
-     */
-    public void CalculMontant() {
-        // TODO implement here
+    public String getMontant() {
+        return montant;
     }
-
+    public String getNum() {
+        return num;
+    }
+    public void setMontant(String montant) {
+        this.montant = montant;
+    }
+    public void setNum(String num) {
+        this.num = num;
+    }
 }
