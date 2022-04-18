@@ -1,76 +1,30 @@
+import java.sql.Date;
 
-import java.util.*;
-
-/**
- * 
- */
-public class Activité {
-
-    /**
-     * Default constructor
-     */
-    public Activité() {
+public class Activite  {
+    private String intitule ;
+    private int nb_adherent ; 
+    private Date date ; 
+    public Activite(String s , int n , Date d){
+        this.intitule = s ; 
+        this.date = d ;
+        this.nb_adherent = n ; 
     }
-
-    /**
-     * 
-     */
-    public void String Intitulé;
-
-    /**
-     * 
-     */
-    public void int NbAdherent ;
-
-    /**
-     * 
-     */
-    public void Date date;
-
-
-
-
-
-    /**
-     * 
-     */
-    public void AfficherA() {
-        // TODO implement here
+    public Date getDate() {
+        return date;
     }
-
-    /**
-     * 
-     */
-    public void Operation1() {
-        // TODO implement here
+    public String getIntitule() {
+        return intitule;
     }
-
-    /**
-     * 
-     */
-    public void ajouterEnfantA() {
-        // TODO implement here
+    public int getNb_adherent() {
+        return nb_adherent;
     }
-
-    /**
-     * 
-     */
-    public void DésinscrireEnfantA() {
-        // TODO implement here
+    public void setDate(Date date) {
+        this.date = date;
     }
-
-    /**
-     * 
-     */
-    public void tarifA() {
-        // TODO implement here
+    public void setIntitule(String intitule) {
+        this.intitule = intitule;
     }
-
-    /**
-     * 
-     */
-    public void AfficherNbPlace() {
-        // TODO implement here
+    public void setNb_adherent(int nb_adherent) {
+        this.nb_adherent = nb_adherent;
     }
-
 }
