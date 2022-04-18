@@ -1,27 +1,14 @@
+import java.sql.Date;
 
-import java.util.*;
-
-/**
- * 
- */
 public class Inscription {
-
-    /**
-     * Default constructor
-     */
-    public Inscription() {
+    private Date date ; 
+    public Inscription (Date date){
+        this.date = date;
     }
-
-    /**
-     * 
-     */
-    public void Date date;
-
-    /**
-     * 
-     */
-    public void inscrire() {
-        // TODO implement here
+    public Date getDate() {
+        return date;
     }
-
+    public void setDate(Date date) {
+        this.date = date;
+    }
 }
