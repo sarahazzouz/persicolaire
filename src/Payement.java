@@ -1,35 +1,20 @@
-
-import java.util.*;
-
-/**
- * 
- */
-public class Payement {
-
-    /**
-     * Default constructor
-     */
-    public Payement() {
+public class Payment {
+    private String numF ; 
+    private boolean statuPay ; 
+    Payment(String numF , boolean statuPay) {  
+        this.numF =  numF ; 
+        this.statuPay = statuPay ; 
     }
-
-    /**
-     * 
-     */
-    public void String numF;
-
-    /**
-     * 
-     */
-    public void boolean statutPay;
-
-
-
-
-    /**
-     * 
-     */
-    public void payer() {
-        // TODO implement here
+    public boolean getStatuPay() {
+        return statuPay;
     }
-
+    public String getNumF() {
+        return numF;
+    }
+    public void setNumF(String numF) {
+        this.numF = numF;
+    }
+    public void setStatuPay(boolean statuPay) {
+        this.statuPay = statuPay;
+    }
 }
