@@ -1,47 +1,20 @@
-
-import java.util.*;
-
-/**
- * 
- */
 public class Cantine {
-
-    /**
-     * Default constructor
-     */
-    public Cantine() {
+    private String nom;
+    private int nb_place ;
+    public void setNb_place(int nb_place) {
+        this.nb_place = nb_place;
     }
-
-    /**
-     * 
-     */
-    public void String nom;
-
-    /**
-     * 
-     */
-    public void int nb_place;
-
-
-    /**
-     * 
-     */
-    public void AffichageMenu() {
-        // TODO implement here
+    public void setNom(String nom) {
+        this.nom = nom;
     }
-
-    /**
-     * 
-     */
-    public void Nbplace_dispo() {
-        // TODO implement here
+    public int getNb_place() {
+        return nb_place;
     }
-
-    /**
-     * 
-     */
-    public void tarifC() {
-        // TODO implement here
+    public String getNom() {
+        return nom;
     }
-
+    public Cantine (String m , int n ){
+        this.nb_place = n ; 
+        this.nom = m ; 
+    }
 }
